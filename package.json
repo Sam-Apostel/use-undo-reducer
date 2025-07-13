@@ -1,0 +1,44 @@
+{
+  "name": "use-undo-reducer",
+  "version": "1.0.0",
+  "description": "Robust Undo & Redo functionality as simple as a React.useReducer",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch"
+  },
+  "sideEffects": false,
+  "keywords": [
+    "undo",
+    "redo",
+    "history",
+    "events",
+    "reducer",
+    "react",
+    "hook"
+  ],
+  "files": [
+    "dist/"
+  ],
+  "license": "MIT",
+  "author": "Sam Apostel",
+  "type": "module",
+  "source": "src/index.js",
+  "module": "./dist/use-undo-reducer.module.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/use-undo-reducer.module.mjs"
+      }
+    }
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.8",
+    "microbundle": "^0.15.1",
+    "typescript": "^5.8.3"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.1 || ^18.0.0 || ^19.0.0"
+  }
+}
