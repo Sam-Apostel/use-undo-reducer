@@ -1,42 +1,43 @@
 {
-  "name": "use-undo-reducer",
-  "version": "1.0.0",
-  "description": "Robust Undo & Redo functionality as simple as a React.useReducer",
-  "scripts": {
-    "build": "tsc",
-    "ci": "bun run build"
-  },
-  "sideEffects": false,
-  "keywords": [
-    "undo",
-    "redo",
-    "history",
-    "events",
-    "reducer",
-    "react",
-    "hook"
-  ],
-  "files": [
-    "dist"
-  ],
-  "license": "MIT",
-  "type": "module",
-  "module": "./dist/index.js",
-  "homepage": "https://github.com/Sam-Apostel/use-undo-reducer",
-  "bugs": {
-    "url": "https://github.com/Sam-Apostel/use-undo-reducer/issues"
-  },
-  "author": "Sam Apostel <sam@apostel.be> (https://sams.land)",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Sam-Apostel/use-undo-reducer.git"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "2.1.1",
-    "@types/react": "^19.1.8",
-    "typescript": "^5.8.3"
-  },
-  "peerDependencies": {
-    "react": "^16.8.0 || ^17.0.1 || ^18.0.0 || ^19.0.0"
-  }
+	"name": "use-undo-reducer",
+	"version": "1.0.0",
+	"description": "Robust Undo & Redo functionality as simple as a React.useReducer",
+	"scripts": {
+		"build": "tsc",
+		"ci": "bunx biome ci ./src && bun run build",
+		"format": "bunx biome check --write ./src"
+	},
+	"sideEffects": false,
+	"keywords": [
+		"undo",
+		"redo",
+		"history",
+		"events",
+		"reducer",
+		"react",
+		"hook"
+	],
+	"files": [
+		"dist"
+	],
+	"license": "MIT",
+	"type": "module",
+	"module": "./dist/index.js",
+	"homepage": "https://github.com/Sam-Apostel/use-undo-reducer",
+	"bugs": {
+		"url": "https://github.com/Sam-Apostel/use-undo-reducer/issues"
+	},
+	"author": "Sam Apostel <sam@apostel.be> (https://sams.land)",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Sam-Apostel/use-undo-reducer.git"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.1.1",
+		"@types/react": "^19.1.8",
+		"typescript": "^5.8.3"
+	},
+	"peerDependencies": {
+		"react": "^16.8.0 || ^17.0.1 || ^18.0.0 || ^19.0.0"
+	}
 }
