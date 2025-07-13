@@ -1,6 +1,6 @@
 {
 	"name": "use-undo-reducer",
-	"version": "1.0.0",
+	"version": "0.0.1",
 	"description": "Robust Undo & Redo functionality as simple as a React.useReducer",
 	"scripts": {
 		"build": "tsc",
