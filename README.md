@@ -1,6 +1,7 @@
-
-
 # use-undo-reducer
+
+[![Bundle Size](https://img.shields.io/bundlephobia/minzip/use-undo-reducer?label=gzipped&style=flat-square)](https://bundlephobia.com/package/use-undo-reducer)
+[![Changesets](https://img.shields.io/badge/🍒%20changesets-enabled-purple?style=flat-square)](https://github.com/changesets/changesets)
 
 > A tiny React hook for adding **undo/redo** to reducer-driven state, with support for **history limits**, **keybindings**, and **replay-based performance optimization**.
 
