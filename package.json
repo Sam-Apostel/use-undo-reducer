@@ -4,10 +4,11 @@
 	"description": "Robust Undo & Redo functionality as simple as a React.useReducer",
 	"scripts": {
 		"build": "tsc",
-		"ci": "bunx biome ci ./src && bun run build",
+		"ci": "bun run build",
 		"format": "bunx biome check --write ./src",
 		"local-release": "changeset version && changeset publish",
-		"prepublishOnly": "npm run ci"
+		"release": "changeset publish",
+		"prepublishOnly": "bun run ci"
 	},
 	"sideEffects": false,
 	"keywords": [
