@@ -1,11 +1,13 @@
 {
 	"name": "use-undo-reducer",
-	"version": "1.0.0",
+	"version": "0.0.1",
 	"description": "Robust Undo & Redo functionality as simple as a React.useReducer",
 	"scripts": {
 		"build": "tsc",
 		"ci": "bunx biome ci ./src && bun run build",
-		"format": "bunx biome check --write ./src"
+		"format": "bunx biome check --write ./src",
+		"local-release": "changeset version && changeset publish",
+		"prepublishOnly": "npm run ci"
 	},
 	"sideEffects": false,
 	"keywords": [
@@ -34,6 +36,7 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.1.1",
+		"@changesets/cli": "^2.29.5",
 		"@types/react": "^19.1.8",
 		"typescript": "^5.8.3"
 	},
