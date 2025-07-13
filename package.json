@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Robust Undo & Redo functionality as simple as a React.useReducer",
   "scripts": {
-    "build": "microbundle",
-    "dev": "microbundle watch"
+    "build": "tsc",
+    "ci": "bun run build"
   },
   "sideEffects": false,
   "keywords": [
@@ -17,25 +17,23 @@
     "hook"
   ],
   "files": [
-    "dist/"
+    "dist"
   ],
   "license": "MIT",
-  "author": "Sam Apostel",
   "type": "module",
-  "source": "src/index.js",
-  "module": "./dist/use-undo-reducer.module.mjs",
-  "types": "dist/index.d.ts",
-  "exports": {
-    ".": {
-      "import": {
-        "types": "./dist/index.d.ts",
-        "default": "./dist/use-undo-reducer.module.mjs"
-      }
-    }
+  "module": "./dist/index.js",
+  "homepage": "https://github.com/Sam-Apostel/use-undo-reducer",
+  "bugs": {
+    "url": "https://github.com/Sam-Apostel/use-undo-reducer/issues"
+  },
+  "author": "Sam Apostel <sam@apostel.be> (https://sams.land)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sam-Apostel/use-undo-reducer.git"
   },
   "devDependencies": {
+    "@biomejs/biome": "2.1.1",
     "@types/react": "^19.1.8",
-    "microbundle": "^0.15.1",
     "typescript": "^5.8.3"
   },
   "peerDependencies": {
