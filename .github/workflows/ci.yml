@@ -31,4 +31,4 @@ jobs:
         run: bun run build
 
       - name: Check changesets
-        run: bun run changesets status
+        run: bunx changeset status
